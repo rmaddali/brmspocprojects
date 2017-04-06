@@ -6,7 +6,7 @@
   <artifactId>payrolldemo</artifactId>
   <version>1.0</version>
   <packaging>kjar</packaging>
-  <name>pstdrl</name>
+  <name>payrollDemo</name>
   <dependencies>
     <dependency>
       <groupId>upsdemos</groupId>
