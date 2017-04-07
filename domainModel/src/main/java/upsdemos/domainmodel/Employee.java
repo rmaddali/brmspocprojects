@@ -9,16 +9,19 @@ public class Employee implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Employee Type")
+   @org.kie.api.definition.type.Label("Employee Type")
    private java.lang.String employeeType;
-   @org.kie.api.definition.type.Label(value = "Hourly Pay")
+   @org.kie.api.definition.type.Label("Hourly Pay")
    private double hourlyPay;
-   @org.kie.api.definition.type.Label(value = "Home Building")
+   @org.kie.api.definition.type.Label("Home Building")
    private java.lang.String homeBuilding;
-   @org.kie.api.definition.type.Label(value = "Home Op Type")
+   @org.kie.api.definition.type.Label("Home Op Type")
    private java.lang.String homeOpType;
-   @org.kie.api.definition.type.Label(value = "Home Center")
+   @org.kie.api.definition.type.Label("Home Center")
    private java.lang.String homeCenter;
+
+   @org.kie.api.definition.type.Label(value = "Employee Id")
+   private java.lang.Long empId;
 
    public Employee()
    {
@@ -74,15 +77,26 @@ public class Employee implements java.io.Serializable
       this.homeCenter = homeCenter;
    }
 
+   public java.lang.Long getEmpId()
+   {
+      return this.empId;
+   }
+
+   public void setEmpId(java.lang.Long empId)
+   {
+      this.empId = empId;
+   }
+
    public Employee(java.lang.String employeeType, double hourlyPay,
          java.lang.String homeBuilding, java.lang.String homeOpType,
-         java.lang.String homeCenter)
+         java.lang.String homeCenter, java.lang.Long empId)
    {
       this.employeeType = employeeType;
       this.hourlyPay = hourlyPay;
       this.homeBuilding = homeBuilding;
       this.homeOpType = homeOpType;
       this.homeCenter = homeCenter;
+      this.empId = empId;
    }
 
 }
