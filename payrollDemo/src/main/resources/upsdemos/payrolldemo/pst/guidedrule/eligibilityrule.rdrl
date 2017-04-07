@@ -1,0 +1,9 @@
+package upsdemos.payrolldemo.pst.guidedrule;
+
+import java.lang.Number;
+
+rule "eligibilityrule"
+	dialect "mvel"
+	when
+	then
+end
