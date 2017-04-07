@@ -1,9 +1,13 @@
 package upsdemos.payrolldemo.pst.guidedrule;
 
 import java.lang.Number;
+import upsdemos.domainmodel.Employee;
+import upsdemos.domainmodel.Facility;
 
 rule "eligibilityrule"
 	dialect "mvel"
 	when
+		Employee( employeeType == "Union" , hourlyPay < 13.65 )
 	then
+		System.out.println("Employee is Eligible");
 end
