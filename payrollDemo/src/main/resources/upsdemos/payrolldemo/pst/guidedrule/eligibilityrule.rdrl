@@ -3,6 +3,7 @@ package upsdemos.payrolldemo.pst.guidedrule;
 import java.lang.Number;
 import upsdemos.domainmodel.Employee;
 import upsdemos.domainmodel.Facility;
+import upsdemos.domainmodel.EmployeeEligibility;
 
 rule "eligibilityrule"
 	dialect "mvel"
