@@ -5,7 +5,7 @@ import upsdemos.domainmodel.Employee;
 import upsdemos.domainmodel.EmployeeEligibility;
 import upsdemos.domainmodel.Facility;
 
-rule "eligibilityrule"
+rule "unionEligRule"
 	dialect "mvel"
 	when
 		emp : Employee( employeeType == "Union" , hourlyPay < 13.65 )
