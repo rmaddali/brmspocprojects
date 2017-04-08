@@ -20,8 +20,11 @@ public class Employee implements java.io.Serializable
    @org.kie.api.definition.type.Label("Home Center")
    private java.lang.String homeCenter;
 
-   @org.kie.api.definition.type.Label(value = "Employee Id")
+   @org.kie.api.definition.type.Label("Employee Id")
    private java.lang.Long empId;
+
+   @org.kie.api.definition.type.Label(value = "Facility")
+   private upsdemos.domainmodel.Facility facility;
 
    public Employee()
    {
@@ -87,9 +90,20 @@ public class Employee implements java.io.Serializable
       this.empId = empId;
    }
 
+   public upsdemos.domainmodel.Facility getFacility()
+   {
+      return this.facility;
+   }
+
+   public void setFacility(upsdemos.domainmodel.Facility facility)
+   {
+      this.facility = facility;
+   }
+
    public Employee(java.lang.String employeeType, double hourlyPay,
          java.lang.String homeBuilding, java.lang.String homeOpType,
-         java.lang.String homeCenter, java.lang.Long empId)
+         java.lang.String homeCenter, java.lang.Long empId,
+         upsdemos.domainmodel.Facility facility)
    {
       this.employeeType = employeeType;
       this.hourlyPay = hourlyPay;
@@ -97,6 +111,7 @@ public class Employee implements java.io.Serializable
       this.homeOpType = homeOpType;
       this.homeCenter = homeCenter;
       this.empId = empId;
+      this.facility = facility;
    }
 
 }
