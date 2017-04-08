@@ -10,5 +10,8 @@ rule "eligibilityrule"
 	when
 		emp : Employee( employeeType == "Union" , hourlyPay < 13.65 )
 	then
-		System.out.println("Employee is Eligible");
+		EmployeeEligibility elig = new EmployeeEligibility();
+		elig.setEligible( true );
+		elig.setEmpId( emp.empId );
+		insert( elig );
 end
