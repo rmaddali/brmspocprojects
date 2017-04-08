@@ -9,7 +9,7 @@ rule "unionEligRule"
 	dialect "mvel"
 	when
 		emp : Employee( employeeType == "Union" , hourlyPay < 13.65 )
-		Employee( )
+		facility : Facility( state == "CA" )
 	then
 		EmployeeEligibility elig = new EmployeeEligibility();
 		elig.setEligible( true );
