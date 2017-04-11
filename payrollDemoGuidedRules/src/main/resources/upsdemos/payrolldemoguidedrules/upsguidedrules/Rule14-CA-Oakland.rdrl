@@ -1,9 +1,17 @@
 package upsdemos.payrolldemoguidedrules.upsguidedrules;
 
 import java.lang.Number;
+import upsdemos.domainmodel.Employee;
+import upsdemos.domainmodel.EmployeeEligibility;
+import upsdemos.domainmodel.Facility;
 
 rule "Rule14-CA-Oakland"
 	dialect "mvel"
+	activation-group "CA"
 	when
+		facility : Facility( state == "CA" , city == "Oakland" )
 	then
+		EmployeeEligibility elig = new EmployeeEligibility();
+		elig.setEligible( true );
+		insert( elig );
 end
