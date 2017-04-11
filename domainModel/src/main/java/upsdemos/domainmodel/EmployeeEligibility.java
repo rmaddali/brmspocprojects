@@ -11,8 +11,7 @@ public class EmployeeEligibility implements java.io.Serializable
 
    @org.kie.api.definition.type.Label(value = "Is Eligible")
    private java.lang.Boolean eligible;
-   @org.kie.api.definition.type.Label(value = "Employee Id")
-   private java.lang.Long empId;
+  
 
    public EmployeeEligibility()
    {
@@ -28,17 +27,8 @@ public class EmployeeEligibility implements java.io.Serializable
       this.eligible = eligible;
    }
 
-   public java.lang.Long getEmpId()
-   {
-      return this.empId;
-   }
-
-   public void setEmpId(java.lang.Long empId)
-   {
-      this.empId = empId;
-   }
-
-   public EmployeeEligibility(java.lang.Boolean eligible, java.lang.Long empId)
+   
+   public EmployeeEligibility(java.lang.Boolean eligible)
    {
       this.eligible = eligible;
       this.empId = empId;
