@@ -7,6 +7,7 @@ import upsdemos.domainmodel.Facility;
 
 rule "Rule16-CA-Los Angeles"
 	dialect "mvel"
+	activation-group "CA"
 	when
 		Employee( )
 		facility : Facility( state == "CA" , city == "Los Angeles" )
