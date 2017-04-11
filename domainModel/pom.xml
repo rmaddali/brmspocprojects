@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>upsdemos</groupId>
   <artifactId>domainModel</artifactId>
-  <version>1.5</version>
+  <version>1.6</version>
   <packaging>kjar</packaging>
   <name>domainModel</name>
   <repositories>
