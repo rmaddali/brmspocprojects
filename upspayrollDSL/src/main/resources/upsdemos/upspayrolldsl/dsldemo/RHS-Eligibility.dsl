@@ -1,0 +1,1 @@
+[consequence] is Eligible =insert(new EmployeeEligibility(true))
