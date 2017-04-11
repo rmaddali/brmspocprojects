@@ -10,5 +10,5 @@ rule "Rule2- CA-NonUnion"
 when Employee of type "NonUnion"
      And works at Facility located in "CA" state
 then
-     Employee is "Eligible"
+     Employee is "Eligible";
 end
