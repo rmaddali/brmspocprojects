@@ -1,0 +1,9 @@
+package upsdemos.payrolldemoguidedrules.upsguidedrules;
+
+import java.lang.Number;
+
+rule "Rule15-CA-San Diego"
+	dialect "mvel"
+	when
+	then
+end
