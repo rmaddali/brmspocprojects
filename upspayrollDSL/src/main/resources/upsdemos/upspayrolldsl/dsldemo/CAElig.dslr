@@ -4,6 +4,8 @@ package upsdemos.upspayrolldsl.dsldemo;
 
 rule "Rule2- CA-NonUnion"
 
-when Employee of ""
-
+when Employee of type "NonUnion"
+     And works at Facility located in "CA" state
+then
+     is Eligible
 end
