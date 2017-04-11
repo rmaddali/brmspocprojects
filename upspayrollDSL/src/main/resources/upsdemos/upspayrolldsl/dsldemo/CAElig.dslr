@@ -12,3 +12,19 @@ when Employee of type "NonUnion"
 then
      Employee is "Eligible";
 end
+
+rule "Rule3-CA-Management"
+
+when Employee of type "Management"
+     And works at Facility located in "CA" state
+then
+     Employee is "Eligible";
+
+end
+
+rule "Rule1-CA-Union-HourlyPay"
+
+when Employee of type "Union" - with hourly Rate less than 13.65
+     And works at Facility located in CA state
+then 
+     Employee is "Eligible";
