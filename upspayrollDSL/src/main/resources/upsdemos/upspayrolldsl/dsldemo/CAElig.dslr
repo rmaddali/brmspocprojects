@@ -1,4 +1,9 @@
 package upsdemos.upspayrolldsl.dsldemo;
 
-If there is a {Union} Employee And
 
+
+rule "Rule2- CA-NonUnion"
+
+when Employee of ""
+
+end
