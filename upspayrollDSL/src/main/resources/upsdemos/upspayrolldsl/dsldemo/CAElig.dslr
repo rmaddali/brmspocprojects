@@ -28,3 +28,5 @@ when Employee of type "Union" - with hourly Rate less than 13.65
      And works at Facility located in CA state
 then 
      Employee is "Eligible";
+
+end
