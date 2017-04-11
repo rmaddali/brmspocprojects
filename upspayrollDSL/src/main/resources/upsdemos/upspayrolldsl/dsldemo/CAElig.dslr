@@ -1,4 +1,7 @@
 package upsdemos.upspayrolldsl.dsldemo;
+import upsdemos.domainmodel.Employee;
+import upsdemos.domainmodel.EmployeeEligibility;
+import upsdemos.domainmodel.Facility;
 
 
 
