@@ -1,9 +1,17 @@
 package upsdemos.payrolldemoguidedrules.upsguidedrules;
 
 import java.lang.Number;
+import upsdemos.domainmodel.Employee;
+import upsdemos.domainmodel.EmployeeEligibility;
+import upsdemos.domainmodel.Facility;
 
 rule "Rule16-CA-Los Angeles"
 	dialect "mvel"
 	when
+		Employee( )
+		facility : Facility( state == "CA" , city == "Los Angeles" )
 	then
+		EmployeeEligibility eligibility = new EmployeeEligibility();
+		eligibility.setEligible( true );
+		insert( eligibility );
 end
