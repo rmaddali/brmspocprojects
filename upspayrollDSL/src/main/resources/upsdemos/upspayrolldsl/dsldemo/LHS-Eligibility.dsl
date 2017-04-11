@@ -1,0 +1,1 @@
+[condition]If there is an Employee with Type of "{type}"=Employee(type=="{type}")
