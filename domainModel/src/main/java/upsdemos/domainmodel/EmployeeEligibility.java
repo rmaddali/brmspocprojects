@@ -31,7 +31,7 @@ public class EmployeeEligibility implements java.io.Serializable
    public EmployeeEligibility(java.lang.Boolean eligible)
    {
       this.eligible = eligible;
-      this.empId = empId;
+      
    }
 
 }
