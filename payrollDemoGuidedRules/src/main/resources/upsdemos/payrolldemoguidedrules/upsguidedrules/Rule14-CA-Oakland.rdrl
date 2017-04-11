@@ -9,6 +9,7 @@ rule "Rule14-CA-Oakland"
 	dialect "mvel"
 	activation-group "CA"
 	when
+		Employee( )
 		facility : Facility( state == "CA" , city == "Oakland" )
 	then
 		EmployeeEligibility elig = new EmployeeEligibility();
