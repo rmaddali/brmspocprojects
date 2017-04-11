@@ -1,2 +1,4 @@
 package upsdemos.upspayrolldsl.dsldemo;
 
+If there is a {Union} Employee
+- with hourly Rate less than {13.65}
