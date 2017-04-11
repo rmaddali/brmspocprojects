@@ -1,0 +1,9 @@
+package upsdemos.payrolldemoguidedrules.upsguidedrules;
+
+import java.lang.Number;
+
+rule "Rule2- CA-NonUnion"
+	dialect "mvel"
+	when
+	then
+end
